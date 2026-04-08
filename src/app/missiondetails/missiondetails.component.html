@@ -1,0 +1,65 @@
+<div class="mission-details-wrapper">
+  
+  <button mat-button class="back-btn" routerLink="/missions">
+    <mat-icon>arrow_back</mat-icon> Back
+  </button>
+
+  <h1 class="page-title">SpaceX Mission Details</h1>
+
+  @if (isLoading()) {
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  } @else {
+    @if (mission(); as m) {
+      <div class="details-box">
+        <div class="left-pane">
+          <img class="patch-lg" [src]="m.links?.mission_patch" alt="{{ m.mission_name }} Patch">
+        </div>
+        
+        <div class="right-pane">
+          <!-- Mission Info -->
+          <h2 class="pink-header">Mission - {{ m.mission_name }}</h2>
+          <p>Name : {{ m.mission_name }}</p>
+          <p>Launch Year: {{ m.launch_year }}</p>
+          <!-- Using switch case as requirement requested -->
+          <p>Launch Year: 
+            @switch (m.launch_year) {
+              @case ('2015') { 2015 }
+              @default { {{ m.launch_year }} }
+            }
+          </p>
+
+          <!-- Rocket Info -->
+          <h2 class="pink-header">Rocket</h2>
+          <p>Name : {{ m.rocket?.rocket_name }}</p>
+          <p>Type : {{ m.rocket?.rocket_type }}</p>
+
+          <!-- Launch Site Info -->
+          <h2 class="pink-header">Launch Site</h2>
+          <p>Name : {{ m.launch_site?.site_name_long || m.launch_site?.site_name || 'No Site Recorded' }}</p>
+
+          <!-- Launch Details -->
+          <h2 class="pink-header">Launch Details</h2>
+          <p class="description">{{ m.details ? m.details : 'No specific details provided for this successful mission.' }}</p>
+
+          <!-- More Info -->
+          <h2 class="pink-header">More Info on Launch Details</h2>
+          <div class="icons-row">
+            @if (m.links?.article_link) {
+              <a [href]="m.links?.article_link" target="_blank" class="icon-link"><mat-icon>article</mat-icon></a>
+            }
+            @if (m.links?.wikipedia) {
+              <a [href]="m.links?.wikipedia" target="_blank" class="icon-link"><mat-icon>public</mat-icon></a>
+            }
+            @if (m.links?.video_link) {
+              <a [href]="m.links?.video_link" target="_blank" class="icon-link"><mat-icon>videocam</mat-icon></a>
+            }
+          </div>
+        </div>
+      </div>
+    } @else {
+      <p>Mission not found.</p>
+    }
+  }
+</div>

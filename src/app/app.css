@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:host {
+  display: block;
+  min-height: 100vh;
+  /* Ultimate Professional Clean Mode */
+  --bg-primary: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --text-main: #111827;
+  --text-muted: #6B7280;
+  --accent-color: #000000;
+  --border-light: #E5E7EB;
+  --shadow-subtle: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.main-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+}
+
+::ng-deep body {
+  margin: 0;
+  background-color: #FAFAFA;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::ng-deep .mat-toolbar.mat-primary {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-bottom: 1px solid #E5E7EB;
+  box-shadow: none !important;
+  height: 64px;
+}
+
+::ng-deep .mat-toolbar button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #374151 !important;
+  border-radius: 6px !important;
+  padding: 0 16px !important;
+}
+
+::ng-deep .mat-toolbar button:hover {
+  background: #F3F4F6 !important;
+  color: #111827 !important;
+}

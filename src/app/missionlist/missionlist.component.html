@@ -1,0 +1,30 @@
+<div class="list-wrapper">
+  <h1 class="page-title">SpaceX Mission Launch List</h1>
+
+  @if (isLoading()) {
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  } @else {
+    @if (missions().length > 0) {
+      <div class="list-container">
+        @for (mission of missions(); track mission.flight_number) {
+          <div class="mission-row" [routerLink]="['/missions', mission.flight_number]">
+            <div class="row-top">
+              <img class="patch-img" [src]="mission.links?.mission_patch_small" alt="{{ mission.mission_name }} Patch">
+              <div class="title-section">
+                <h2>{{ mission.mission_name }}</h2>
+                <span class="year">{{ mission.launch_year }}</span>
+              </div>
+            </div>
+            <div class="row-bottom">
+              <p>{{ mission.details ? mission.details : 'No details available for this mission at this time.' }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    } @else {
+      <p>No missions found.</p>
+    }
+  }
+</div>

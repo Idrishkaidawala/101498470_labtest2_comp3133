@@ -1,0 +1,86 @@
+<div class="dashboard-container">
+  
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="filter-section">
+      <h3 class="filter-title">Launch Date</h3>
+      <div class="year-grid">
+        @for (year of years; track year) {
+          <button 
+            class="filter-btn" 
+            [class.active]="activeYear() === year"
+            (click)="filterByYear(year)">
+            {{ year }}
+          </button>
+        }
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3 class="filter-title">Successful Launch</h3>
+      <div class="bool-grid">
+        <button class="filter-btn" [class.active]="activeLaunchSuccess() === true" (click)="filterByLaunch(true)">true</button>
+        <button class="filter-btn" [class.active]="activeLaunchSuccess() === false" (click)="filterByLaunch(false)">false</button>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3 class="filter-title">Successful Land</h3>
+      <div class="bool-grid">
+        <button class="filter-btn" [class.active]="activeLandSuccess() === true" (click)="filterByLand(true)">true</button>
+        <button class="filter-btn" [class.active]="activeLandSuccess() === false" (click)="filterByLand(false)">false</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-grid">
+    @if (filteredMissions().length > 0) {
+      <div class="cards-wrapper">
+        @for (mission of filteredMissions(); track mission.flight_number) {
+          <div class="filter-card">
+            <div class="card-img-container">
+              <img [src]="mission.links?.mission_patch" alt="{{ mission.mission_name }} Patch">
+            </div>
+            <div class="card-details">
+              <h4>{{ mission.mission_name }} #{{ mission.flight_number }}</h4>
+              
+              <div class="data-row">
+                <span class="label">Mission Ids</span>
+                <span class="value">{{ mission.mission_id && mission.mission_id.length > 0 ? mission.mission_id.join(', ') : '-' }}</span>
+              </div>
+              <div class="data-row">
+                <span class="label">Launch Year</span>
+                <span class="value">{{ mission.launch_year }}</span>
+              </div>
+              <div class="data-row">
+                <span class="label">Successful Launch</span>
+                <span class="value">{{ mission.launch_success ? 'Yes' : 'No' }}</span>
+              </div>
+              <div class="data-row">
+                <span class="label">Successful Landing</span>
+                <span class="value">
+                  @if (mission.rocket?.first_stage?.cores && mission.rocket.first_stage.cores.length > 0) {
+                    {{ mission.rocket.first_stage.cores[0].land_success === null ? 'No Data' : (mission.rocket.first_stage.cores[0].land_success ? 'Yes' : 'No') }}
+                  } @else {
+                    No Data
+                  }
+                </span>
+              </div>
+            </div>
+            
+            <div class="card-action">
+              <button class="details-btn" [routerLink]="['/missions', mission.flight_number]">View Details</button>
+            </div>
+          </div>
+        }
+      </div>
+    } @else {
+      <p class="no-data">No missions matching this filter.</p>
+    }
+  </main>
+</div>
+
+<footer class="footer">
+  <p>Developed By - Student</p>
+</footer>

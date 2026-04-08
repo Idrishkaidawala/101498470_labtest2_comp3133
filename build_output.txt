@@ -1,0 +1,251 @@
+[33m❯[39m Building...
+[32m✔[39m Building...
+Application bundle generation failed. [2.026 seconds] - 2026-04-08T23:23:06.966Z
+
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:18:64:
+[37m      18 │ ...mage" [src]="m.links?.[32mmission_patch_small[37m" alt="{{ m.mission_na...
+         ╵                          [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:27:49:
+[37m      27 │           <p><strong>Name:</strong> {{ m.rocket?.[32mrocket_name[37m }}</p>
+         ╵                                                  [32m~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:29:31:
+[37m      29 │             @switch (m.rocket?.[32mrocket_type[37m) {
+         ╵                                [32m~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:40:61:
+[37m      40 │ ...<span class="badge default-gen">{{ m.rocket?.[32mrocket_type[37m }}</span>
+         ╵                                                 [32m~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:49:26:
+[37m      49 │             @if (m.links?.[32marticle_link[37m) {
+         ╵                           [32m~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:50:69:
+[37m      50 │ ...on color="primary" [href]="m.links?.[32marticle_link[37m" target="_blank">
+         ╵                                        [32m~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:54:26:
+[37m      54 │             @if (m.links?.[32mwikipedia[37m) {
+         ╵                           [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:55:69:
+[37m      55 │ ...utton color="primary" [href]="m.links?.[32mwikipedia[37m" target="_blank">
+         ╵                                           [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:59:26:
+[37m      59 │             @if (m.links?.[32mvideo_link[37m) {
+         ╵                           [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:60:66:
+[37m      60 │ ...-button color="warn" [href]="m.links?.[32mvideo_link[37m" target="_blank">
+         ╵                                          [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missionlist/missionlist.component.html:18:54:
+[37m      18 │ ...ge [src]="mission.links?.[32mmission_patch_small[37m" alt="Mission Patch">
+         ╵                             [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissionlistComponent.
+
+    src/app/missionlist/missionlist.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missionlist.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missionlist/missionlist.component.html:21:61:
+[37m      21 │ ...trong> {{ mission.rocket?.[32mrocket_name[37m }} ({{ mission.rocket?.ro...
+         ╵                              [32m~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissionlistComponent.
+
+    src/app/missionlist/missionlist.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missionlist.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missionlist/missionlist.component.html:21:96:
+[37m      21 │ ...ion.rocket?.rocket_name }} ({{ mission.rocket?.[32mrocket_type[37m }})</p>
+         ╵                                                   [32m~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissionlistComponent.
+
+    src/app/missionlist/missionlist.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missionlist.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missionlist/missionlist.component.html:25:36:
+[37m      25 │                 @if (mission.links?.[32marticle_link[37m) {
+         ╵                                     [32m~~~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissionlistComponent.
+
+    src/app/missionlist/missionlist.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missionlist.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missionlist/missionlist.component.html:28:36:
+[37m      28 │                 @if (mission.links?.[32mwikipedia[37m) {
+         ╵                                     [32m~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissionlistComponent.
+
+    src/app/missionlist/missionlist.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missionlist.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. Find more at https://v21.angular.dev/extended-diagnostics/NG8107[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missionlist/missionlist.component.html:31:36:
+[37m      31 │                 @if (mission.links?.[32mvideo_link[37m) {
+         ╵                                     [32m~~~~~~~~~~[0m
+
+  Warning occurs in the template of component MissionlistComponent.
+
+    src/app/missionlist/missionlist.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missionlist.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-divider' is not a known element:
+1. If 'mat-divider' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'mat-divider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:24:10:
+[37m      24 │           [32m<mat-divider>[37m</mat-divider>
+         ╵           [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-divider' is not a known element:
+1. If 'mat-divider' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'mat-divider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/missiondetails/missiondetails.component.html:45:10:
+[37m      45 │           [32m<mat-divider>[37m</mat-divider>
+         ╵           [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component MissiondetailsComponent.
+
+    src/app/missiondetails/missiondetails.component.ts:15:15:
+[37m      15 │   templateUrl: [32m'./missiondetails.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@angular/animations/browser"[0m
+
+    node_modules/@angular/platform-browser/fesm2022/animations-async.mjs:37:53:
+[37m      37 │ ....moduleImpl ?? import([32m'@angular/animations/browser'[37m).then(m => m);
+         ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  You can mark the path "@angular/animations/browser" as external to exclude it from the bundle, which will remove this error and leave the unresolved path in the bundle. You can also add ".catch()" here to handle this failure at run-time instead of bundle-time.
+
+[39m[22m

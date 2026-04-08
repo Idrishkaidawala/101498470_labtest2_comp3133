@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/missions">
+    <mat-icon>rocket_launch</mat-icon> All Missions
+  </button>
+  <button mat-button routerLink="/filter">
+    <mat-icon>search</mat-icon> Filter Missions
+  </button>
+</mat-toolbar>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
