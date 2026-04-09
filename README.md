@@ -13,7 +13,8 @@ This is a modern Angular application built to explore and filter SpaceX missions
 
 ## Screenshots of the application with description
 
-> **Note to self:** Be sure to create a folder named `screenshots/` in this repository and upload your own images matching these names before your final submission!
+
+
 
 ### 1. Running Application (Main List)
 ![Running application](./screenshots/mission-list.png)
